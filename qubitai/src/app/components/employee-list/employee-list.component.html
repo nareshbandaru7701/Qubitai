@@ -1,0 +1,5 @@
+<app-home></app-home>
+
+<div class="container">
+    <app-reusable-table [tableTitles]="employeeTableTitles" [data]="employeeData" (pageNumber)="employeePage($event)"></app-reusable-table>
+</div>

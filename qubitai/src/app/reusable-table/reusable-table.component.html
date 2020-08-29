@@ -1,0 +1,33 @@
+
+<div class="container">           
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+            <th *ngFor="let title of tableTitles">
+              {{ title.label }} 
+              <span *ngIf="title.name === 'fullName'" (click)="sortingByName($event)"
+                class="sortIcon glyphicon glyphicon-chevron-up"></span>
+            </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of data | paginate: { id: 'list', 
+            itemsPerPage: itemsPerPage,
+            currentPage: currentPage,
+            totalItems: data?.length || 5 }">
+            <td>{{ user.id || '-' }}</td>
+            <td>{{ user.fullName || '-' }}</td>
+            <td>{{ user.email || '-' }}</td>
+            <td>{{ user.dob || '-' }}</td>
+            <td>{{ user.age || '-' }}</td>
+            <td>{{ user.phone || '-' }}</td>
+            <td>{{ user.organization || '-' }}</td>
+            <td>{{ user.type || '-' }}</td>
+            <td>{{ user.platform || '-' }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <pagination-controls id="list" (pageChange)="changePage(currentPage = $event)"></pagination-controls>
+    </div>
+  </div>
