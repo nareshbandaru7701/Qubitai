@@ -1,5 +1,6 @@
 {
-	"employeeData": [{
+	"employeeData": [
+		{
 			"id": "100",
 			"fullName": "Anil Kumble",
 			"email": "anilKumble@gmail.com",
@@ -109,7 +110,7 @@
 			"type": "Permanent",
 			"platform": "Testing"
 		},
-        {
+		{
 			"id": "110",
 			"fullName": "Dinesh Karthik",
 			"email": "dk@gmail.com",
@@ -120,7 +121,7 @@
 			"type": "Permanent",
 			"platform": "Java"
 		},
-        {
+		{
 			"id": "111",
 			"fullName": "Ravindra Jadeja",
 			"email": "Jadeja@gmail.com",
@@ -131,7 +132,7 @@
 			"type": "Contractor",
 			"platform": "ASP.Net"
 		},
-        {
+		{
 			"id": "112",
 			"fullName": "Bhuvneshwar Kumar",
 			"email": "Bhuvneshwar@gmail.com",
@@ -142,7 +143,7 @@
 			"type": "Permanent",
 			"platform": "Tester"
 		},
-        {
+		{
 			"id": "113",
 			"fullName": "Mohammed Shami",
 			"email": "Shami@gmail.com",
@@ -153,7 +154,7 @@
 			"type": "Permanent",
 			"platform": "Angular"
 		},
-        {
+		{
 			"id": "114",
 			"fullName": "Jasprit Bumrah",
 			"email": "Jasprit@gmail.com",
