@@ -20,7 +20,12 @@ export class StudentListComponent implements OnInit {
 		{ name: 'platform', label: 'Sports' }
 	];
 
+	public loadingValue = 'loading';
 	public studentData: any = [];
+	public studentTotalCount: any;
+	public currentPage: number = 1;
+	public limit: number = 5;
+	public base_URL = 'https://my-json-server.typicode.com/nareshbandaru7701/Qubitai/studentData';
 
   constructor(private http: HttpClient) { }
 
@@ -31,15 +36,24 @@ export class StudentListComponent implements OnInit {
 
   getStudentData() {
 	const self = this;
-	self.http.get('./assets/student.json').subscribe((res: any) => {
+	self.http.get(self.base_URL + '?_page=' + self.currentPage + '&_limit=' + self.limit).subscribe((res: any) => {
 		if(res) {
-			self.studentData = res.studentData;
+			self.studentData = res;
+			self.studentData.forEach(ele => {
+				if(ele.total_rcords) {
+					self.studentTotalCount = ele.total_rcords;
+				}
+			});
+		self.loadingValue = 'loaded';
 		}
 	});
   }
 
   studentPage(page) {
-	alert('You clicked on page number ' + page + ' of Student List');
+	const self = this;
+	self.loadingValue = 'loading';
+	self.currentPage = page;
+	self.getStudentData();
   }
 
 }

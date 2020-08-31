@@ -8,7 +8,8 @@
 			"phone": "9999999901",
 			"organization": "CTS",
 			"type": "Contractor",
-			"platform": "SAP"
+			"platform": "SAP",
+			"total_rcords": 15
 		},
 		{
 			"id": "101",
@@ -19,7 +20,8 @@
 			"phone": "9999999902",
 			"organization": "Infosys",
 			"type": "Permanent",
-			"platform": ".Net"
+			"platform": ".Net",
+			"total_rcords": 15
 		},
 		{
 			"id": "102",
@@ -30,7 +32,8 @@
 			"phone": "9999999903",
 			"organization": "Wipro",
 			"type": "Permanent",
-			"platform": "Java"
+			"platform": "Java",
+			"total_rcords": 15
 		},
 		{
 			"id": "103",
@@ -41,7 +44,8 @@
 			"phone": "9999999904",
 			"organization": "Google",
 			"type": "Contractor",
-			"platform": "Angular"
+			"platform": "Angular",
+			"total_rcords": 15
 		},
 		{
 			"id": "104",
@@ -52,7 +56,8 @@
 			"phone": "9999999905",
 			"organization": "Mphasis",
 			"type": "Contractor",
-			"platform": "Javascript"
+			"platform": "Javascript",
+			"total_rcords": 15
 		},
 		{
 			"id": "105",
@@ -63,7 +68,8 @@
 			"phone": "9999999906",
 			"organization": "Quibitai",
 			"type": "Permanent",
-			"platform": "TypeScript"
+			"platform": "TypeScript",
+			"total_rcords": 15
 		},
 		{
 			"id": "106",
@@ -74,7 +80,8 @@
 			"phone": "9999999907",
 			"organization": "Persistant",
 			"type": "Permanent",
-			"platform": "Big Data"
+			"platform": "Big Data",
+			"total_rcords": 15
 		},
 		{
 			"id": "107",
@@ -85,7 +92,8 @@
 			"phone": "9999999908",
 			"organization": "Tech Mahindra",
 			"type": "Contractor",
-			"platform": "Data Science"
+			"platform": "Data Science",
+			"total_rcords": 15
 		},
 		{
 			"id": "108",
@@ -96,7 +104,8 @@
 			"phone": "9999999909",
 			"organization": "Vartusa",
 			"type": "Permanent",
-			"platform": "Hacking"
+			"platform": "Hacking",
+			"total_rcords": 15
 		},
 		{
 			"id": "109",
@@ -107,7 +116,8 @@
 			"phone": "9999999910",
 			"organization": "Ojas",
 			"type": "Permanent",
-			"platform": "Testing"
+			"platform": "Testing",
+			"total_rcords": 15
 		},
         {
 			"id": "110",
@@ -118,7 +128,8 @@
 			"phone": "9999999911",
 			"organization": "CTS",
 			"type": "Permanent",
-			"platform": "Java"
+			"platform": "Java",
+			"total_rcords": 15
 		},
         {
 			"id": "111",
@@ -129,7 +140,8 @@
 			"phone": "9999999912",
 			"organization": "TCS",
 			"type": "Contractor",
-			"platform": "ASP.Net"
+			"platform": "ASP.Net",
+			"total_rcords": 15
 		},
         {
 			"id": "112",
@@ -140,7 +152,8 @@
 			"phone": "9999999913",
 			"organization": "IBM",
 			"type": "Permanent",
-			"platform": "Tester"
+			"platform": "Tester",
+			"total_rcords": 15
 		},
         {
 			"id": "113",
@@ -151,7 +164,8 @@
 			"phone": "9999999914",
 			"organization": "Qualcomm",
 			"type": "Permanent",
-			"platform": "Angular"
+			"platform": "Angular",
+			"total_rcords": 15
 		},
         {
 			"id": "114",
@@ -162,7 +176,8 @@
 			"phone": "9999999915",
 			"organization": "BCCI",
 			"type": "Contractor",
-			"platform": "PHP"
+			"platform": "PHP",
+			"total_rcords": 15
 		}
 	]
 }

@@ -14,7 +14,7 @@
         <tr *ngFor="let user of data | paginate: { id: 'list', 
             itemsPerPage: itemsPerPage,
             currentPage: currentPage,
-            totalItems: data?.length || 5 }">
+            totalItems: totalRecords || 5 }">
             <td>{{ user.id || '-' }}</td>
             <td>{{ user.fullName || '-' }}</td>
             <td>{{ user.email || '-' }}</td>

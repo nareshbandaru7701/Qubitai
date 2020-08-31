@@ -20,7 +20,12 @@ export class EmployeeListComponent implements OnInit {
 		{ name: 'platform', label: 'Technology' }
 	];
 
+	public loadingValue = 'loading';
 	public employeeData: any = [];
+	public employeeTotalCount: any;
+	public currentPage: number = 1;
+	public limit: number = 5;
+	public base_URL = 'https://my-json-server.typicode.com/nareshbandaru7701/Qubitai/employeeData';
 
   constructor(private http: HttpClient) { }
 
@@ -31,15 +36,24 @@ export class EmployeeListComponent implements OnInit {
 
   getEmployeeData() {
 	const self = this;
-	self.http.get('./assets/employee.json').subscribe((res: any) => {
+	self.http.get(self.base_URL + '?_page=' + self.currentPage + '&_limit=' + self.limit).subscribe((res: any) => {
 		if(res) {
-		self.employeeData = res.employeeData;
+			self.employeeData = res;
+			self.employeeData.forEach(ele => {
+				if(ele.total_rcords) {
+					self.employeeTotalCount = ele.total_rcords;
+				}
+			});
+		self.loadingValue = 'loaded';
 		}
 	});
   }
 
   employeePage(page) {
-	alert('You clicked on page number ' + page + ' of Employee List');
+	const self = this;
+	self.loadingValue = 'loading';
+	self.currentPage = page;
+	self.getEmployeeData();
   }
 
 }

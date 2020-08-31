@@ -9,10 +9,11 @@ export class ReusableTableComponent implements OnInit {
 
   @Input() tableTitles: any = [];
   @Input() data: any;
+  @Input() totalRecords: any;
+  @Input() currentPage: number = 1;
+  @Output() pageNumber: EventEmitter<any> = new EventEmitter();
   public sortArray: number = 1;
   public itemsPerPage: number = 5;
-  public currentPage: number = 1;
-  @Output() pageNumber: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
